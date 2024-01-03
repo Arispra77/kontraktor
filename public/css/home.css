@@ -1,0 +1,34 @@
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Warna latar belakang navbar */
+  overflow: hidden;
+  display: flex; /* Menggunakan flexbox untuk mengatur posisi elemen secara horizontal */
+  justify-content: space-between; /* Membagi ruang di sisi kiri dan kanan */
+}
+
+.nav-left {
+  display: flex; /* Mengatur elemen-elemen di sisi kiri secara horizontal */
+  align-items: center; /* Memusatkan elemen-elemen di sisi kiri vertikal */
+}
+
+.nav-right {
+  display: flex; /* Mengatur elemen "Akun" di sisi kanan secara horizontal */
+  align-items: center; /* Memusatkan elemen "Akun" vertikal */
+}
+
+.nav-title {
+  margin: 0; /* Menghapus margin default dari h3 */
+}
+
+li.nav-item {
+  margin-left: 20px; /* Memberikan margin antara elemen-elemen navigasi */
+}
+
+li.nav-item:first-child {
+  margin-left: 0; /* Menghapus margin kiri pada elemen pertama */
+}
+
+
+

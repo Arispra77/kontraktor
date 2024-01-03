@@ -1,0 +1,135 @@
+.tabel{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px
+}
+.truncate-text {
+    max-width: 150px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+    word-wrap: break-word; /* Ini akan memungkinkan teks untuk meluncur ke bawah */
+}
+@media print {
+    @page {
+        size: auto;  /* Ukuran kertas otomatis */
+        margin: 30px;
+        margin-bottom: 50px;  /* Menghilangkan margin */
+    }
+
+    /* Menghilangkan header dan footer */
+    @page {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .laporan {
+        padding-bottom: 20px; /* Memberikan jarak antara konten dan footer */
+    }
+    /* Atur elemen yang Anda ingin sembunyikan saat mencetak */
+    #element-to-hide {
+        display: none;
+    }
+    .print-footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: left;
+          
+        }
+}
+#printLPAButton {
+    margin-left: 320px;
+}
+    
+        /* Ukuran huruf default */
+        body {
+            font-size: 16px;
+        }
+        /* Media query untuk layar kecil */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 10px; /* Ukuran huruf lebih kecil untuk layar kecil */
+            }
+
+            /* Mengatur tata letak tabel untuk layar kecil */
+            table {
+                font-size: 10px;
+           }
+           #printLPAButton {
+        margin-left: 10px; /* Sesuaikan ini sesuai kebutuhan Anda */
+        width: 20%;
+           }
+        }
+        @media screen and (max-width: 1000px) {
+            body {
+                font-size: 14px; /* Ukuran huruf lebih kecil untuk layar kecil */
+            }
+            #printLPAButton {
+        margin-left: 10px; /* Sesuaikan ini sesuai kebutuhan Anda */
+        width: 20%;
+           }
+
+            /* Mengatur tata letak tabel untuk layar kecil */
+            table {
+                font-size: 9.5px;
+           }
+        }
+
+        /* Media query untuk layar sangat kecil */
+        @media screen and (max-width: 576px) {
+            body {
+                font-size: 9px; /* Ukuran huruf lebih kecil lagi untuk layar sangat kecil */
+            }
+
+            /* Mengatur tata letak tabel untuk layar sangat kecil */
+            table {
+                font-size: 9px;
+            }
+        }
+        .textarea-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px; /* Sesuaikan dengan lebar yang Anda inginkan */
+            width: 100%; /* Mengisi lebar kolom tersedia */
+        }
+
+        /* CSS untuk mengatur tata letak button */
+        .textarea-container button {
+            align-self: flex-end; /* Menyusun button ke kanan */
+            margin-top: 10px; /* Memberikan jarak atas antara textarea dan button */
+        }
+        .auto {
+    display: block;
+    max-height: 200px; /* Maksimum tinggi elemen sebelum muncul bilah gulir */
+    min-height: 50px; /* Minimum tinggi elemen agar tidak terlalu kecil */
+    overflow-y: auto; /* Menampilkan bilah gulir vertikal jika konten terlalu panjang */
+    /* Opsi: Tambahkan border jika diperlukan */
+    position: relative; 
+}
+
+.auto table {
+    border-collapse: collapse; /* Agar border tabel tetap rapi */
+    width: 100%;
+}
+
+.auto thead {
+    position: sticky;
+    top: 0; /* Tetap di atas saat di-scroll */
+    background-color: #ffffff; /* Latar belakang header */
+    z-index: 0; /* Agar header di atas konten */
+
+}
+
+.auto th {
+    background-color: #aa9999; /* Latar belakang header */
+   
+    position: sticky;
+    top: 0; /* Tetap di atas saat di-scroll */
+    z-index: 0; /* Agar header di atas konten */
+    text-align: left;
+}
+
+
+.truncate-text {
+    max-width: 150px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+    word-wrap: break-word; /* Ini akan memungkinkan teks untuk meluncur ke bawah */
+}
